@@ -6,11 +6,11 @@ const Schema = mongoose.Schema;
 const StudentSchema = new Schema({
     Index_Number: {
         type: String,
-        // required: [true, 'Index_Number field is required'] 
+        required: [true, 'Index_Number field is required'] 
     },
     Password:{
         type: String,
-        // required: [true, 'password field is required'] 
+        required: [true, 'password field is required'] 
     },
     Registration_Number:{
         type: String
@@ -21,7 +21,7 @@ const StudentSchema = new Schema({
     Email:{
         type: String
     },
-   /* Photo:[{
+    /*Photo:[{
         data:buffer,
         ContentType: String,
     }],*/

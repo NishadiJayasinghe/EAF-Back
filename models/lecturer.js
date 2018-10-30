@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 //create lecturer schema & model
 const lecturerSchema = new Schema({
-    Registration_Numbr:{
+    Registration_Number:{
         type: String,
         required: [true, 'Registration_Number field is required'] 
     },

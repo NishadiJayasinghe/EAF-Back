@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 //create admin schema & model
 const adminSchema = new Schema({
-    Registration_Numbr:{
+    Registration_Number:{
         type: String,
         required: [true, 'Registration field is required'] 
     },

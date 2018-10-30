@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const studentService = require('./services/student-service');
 const lecturerService = require('./services/lecturer-service');
 const adminService = require('./services/admin-service');
+const subjectsService = require('./services/subjects-service');
 
 //set up express app
 const app = express();
@@ -31,6 +32,7 @@ app.use(bodyparser.json());
 app.use("/student",studentService);
 app.use("/admin",adminService);
 app.use("/lecturer",lecturerService);
+app.use("/subjects",subjectsService);
 
 //listen for requests
 app.listen(process.env.port || 4500,function(){
